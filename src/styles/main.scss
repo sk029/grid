@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
+
+body {
+  padding: 1em;
+  margin: 0;
+  background-color: #f9f6fd;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.genrate-btn{
+  // display: none!important;
+  // background-color: red;
+}
+#app {
+ height: auto;
+ 
+// width: 100%;
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+}
+.generate{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 7px 13px;
+gap: 8px;
+margin-left: 60px;
+// position: absolute;
+width: 94px;
+height: 38px;
+
+
+/* Theme/Primary */
+
+background: #0D6EFD;
+border-radius: 4px;
+}
+.filters {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 
+}
+.form-element {
+  margin: .25em 1em;
+}
+// .flex{
+//   display: flex;
+//   flex-direction: row;
+
+// // justify-content: center;
+// // align-items: center;
+// }
+label {
+  // position: absolute;
+  width: 53px;
+  height: 16px;
+  // left: 90px;
+  // top: 138px;
+  
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  
+  color: #000000;
+}
+select {
+  display: inline-block;
+  height: calc(1.5em + .75em + 2px);
+  min-width: 5em;
+  padding: .375em .75em;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5a595d;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #fff;
+  border-radius: .25em;
+}
+// .grid-container{
+//   height: auto;
+//   width: 100%;
+//   flex-wrap: wrap;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+//   max-width: 2169px;
+  
+// }
+#grid {
+
+  
+  > div {
+    // outline:12px solid black;
+    // background-color: white;
+  }
+  #box{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: black;
+    // position: absolute;
+// width: 60px;
+// height: 60px;
+// left: 210px;
+// top: 223px;
+
+// background: #FFFFFF;
+
+font-family: 'Roboto Slab';
+// font-style: normal;
+// font-weight: 900;
+font-size: 36px;
+line-height: 47px;
+  }
+}
+
+@media (max-height: 667px) and (max-width: 1024px), (max-width: 767px) {
+  .filters {
+    height: calc(24vh - 2em);
+  }
+  label {
+    margin-top: 0;
+    font-size: .875em;
+  }
+  #grid {
+    height: calc(76vh - 1em);
+    
+  }
+}
+
+@media (max-width: 767px) {
+  .form-element {
+    width: 50%;
+  }
+  select {
+    display: block;
+    width: 100%;
+  }
+}
